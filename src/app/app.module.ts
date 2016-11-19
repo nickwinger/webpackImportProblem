@@ -8,6 +8,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import {Commands} from "../services/cmmands";
 import {RegisterPage} from "../pages/register/register";
 import {LoginPage} from "../pages/login/login";
+import {RequirePage} from "../services/requirePage";
 
 @NgModule({
   declarations: [
@@ -33,7 +34,7 @@ import {LoginPage} from "../pages/login/login";
     RegisterPage
   ],
   providers: [
-    Commands
+    Commands, RequirePage
   ]
 })
 export class AppModule {}
